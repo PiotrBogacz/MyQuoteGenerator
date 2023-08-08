@@ -20,6 +20,11 @@ function removeLoadingSpinner() {
 // Choose next quote 
 function newQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+    if (quote.text.length > 80) {
+        quoteText.classList.add("long-quote");
+    } else {
+        quoteText.classList.remove("long-quote");
+    }
     quoteText.textContent = quote.text;
     quoteAuthor.textContent = quote.author;
 }
