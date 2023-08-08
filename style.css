@@ -22,13 +22,13 @@ body {
   max-width: 1000px;
   padding: 20px 30px;
   border-radius: 15px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .quote-author {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-top: 10px;
 }
@@ -68,6 +68,17 @@ button:active {
 
 .fa-quote-left {
   font-size: 3.5rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+#quote-tag {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-left: 60px;
+  margin-top: 20px;
 }
 
 /* Loader */
