@@ -70,6 +70,10 @@ button:active {
   font-size: 3.5rem;
 }
 
+.long-quote {
+  font-size: 2rem;
+}
+
 /* Loader */
 .loader {
   border: 16px solid #f3f3f3; 
