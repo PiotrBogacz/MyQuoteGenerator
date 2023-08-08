@@ -95,3 +95,41 @@ button:active {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+@media screen and (max-width: 900px) {
+  .quote-container {
+    margin: auto 20px;
+  }
+
+  #quote {
+    font-size: 1.5rem;
+  }
+
+  .fa-quote-left {
+    font-size: 2.5rem;
+  }
+
+  .quote-author {
+    font-size: 1.2rem;
+  }
+
+  #buttons-container {
+    margin-top: 30px;
+    align-items: end;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  #quote-tag {
+    display: none;
+  }
+
+  .long-quote {
+    font-size: 1.2rem;
+  }
+}

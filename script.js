@@ -10,7 +10,7 @@ const quoteTag = document.getElementById("quote-tag");
 // Quotes array
 let apiQuotes = [];
 
-function showLoadingSpinner() {
+const showLoadingSpinner = () => {
     quoteContainer.hidden = true;
     loader.hidden = false;
 }
@@ -40,7 +40,6 @@ function newQuote() {
     //show quote & hide loading spinner
     quoteText.textContent = quote.text;
     quoteTag.textContent = `Quote tag: ${quote.tag}`
-    console.log(quote);
     removeLoadingSpinner();
 }
 
@@ -54,6 +53,8 @@ async function getQuotes() {
         apiQuotes = await response.json();
         newQuote();
     } catch (error) {
+        getQuotes();
+        console.log(error);
     }
     removeLoadingSpinner();
 }
